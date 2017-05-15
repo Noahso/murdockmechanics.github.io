@@ -135,9 +135,9 @@ define(['jquery', 'underscore'], function($, _){
 				false
 			);
 			
-			ctx.strokeStyle = "#666";
-			ctx.fillStyle = "#000";
-			if (object.cameraFocus === true) ctx.fillStyle = '#40A2BF';
+			ctx.strokeStyle = "#dfdfdf";
+			ctx.fillStyle = "#fff";
+			if (object.cameraFocus === true) ctx.fillStyle = '#F25555';
 			ctx.fill();
 		})();
 	}
@@ -145,7 +145,7 @@ define(['jquery', 'underscore'], function($, _){
 	function renderMassBuilder(){
 		if (mouse.visible === true) {
 
-			ctx.fillStyle = '#AAA';
+			ctx.fillStyle = '#fff';
 			switch (mouse.state) {
 				case 'placement':
 					ctx.beginPath();
@@ -169,7 +169,7 @@ define(['jquery', 'underscore'], function($, _){
 					ctx.beginPath();
 					ctx.moveTo(mouse.x, mouse.y);
 					ctx.lineTo(mouse.x2, mouse.y2);
-					ctx.strokeStyle = '#D55';
+					ctx.strokeStyle = '#F25555';
 					ctx.lineWidth = 2;
 					ctx.stroke();
 				break;
@@ -188,7 +188,7 @@ define(['jquery', 'underscore'], function($, _){
 			ctx.moveTo(i*gridSize-(gridSize+camera.x%gridSize), 0);
 			ctx.lineTo(i*gridSize-(gridSize+camera.x%gridSize), canvas.height);
 
-			ctx.strokeStyle = '#CCC';
+			ctx.strokeStyle = '#444';
 			ctx.lineWidth = 1;
 			ctx.stroke();
 		};
@@ -198,7 +198,7 @@ define(['jquery', 'underscore'], function($, _){
 			ctx.moveTo(0, i*gridSize-(gridSize+camera.y%gridSize));
 			ctx.lineTo(canvas.width, i*gridSize-(gridSize+camera.y%gridSize));
 
-			ctx.strokeStyle = '#CCC';
+			ctx.strokeStyle = '#444';
 			ctx.lineWidth = 1;
 			ctx.stroke();
 		};
