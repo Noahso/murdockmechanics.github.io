@@ -31,7 +31,7 @@ define([
 		// Initialize GUI
 		gui.initialize(spacetime, render, canvas, massMultiplier);
 	
-		// Solar system
+		/* Solar system
 		(function solarSystem(){
 			var star = spacetime.addObject({
 				cameraFocus: true,

@@ -86,12 +86,13 @@ p.box__title{
   box-shadow: 0 0 1px 0 #000;
   background-color: #000;
 }
+
 .box__title-heading span {
   letter-spacing: 7px;
   color: #fff;
 }
+
 .box__title-par {
-  margin-top: 1%;
   color: #fff;
   font-size: 13px;
   font-weight: bold;
@@ -108,7 +109,6 @@ p.box__title{
 #gravity{
     width: 100vw;
     height: 100vh;
-
     background-color: #333;
 }
 
