@@ -10,10 +10,18 @@ html {
 }
 
 a {
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
   color: #fff;
+  position: relative;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  text-decoration: none;
+}
 
+a:hover,
+a:focus {
+    color: #F25555;
+    outline: 0;
 }
 
 .chrome-element {
